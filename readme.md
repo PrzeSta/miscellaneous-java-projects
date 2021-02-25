@@ -1,6 +1,6 @@
-# Miscellaneous java projects
+# Miscellaneous Java projects
 ---
-This repository contains four projects that I have made for course of Java programming during my studies at University of Wrocław. They are small window applications,  and each took me one week to develop (at most) and is centred around one major topic provided by the lecturer (in form of a task with strict guidelines, which sometimes resulted in overcomplicated interfaces or solutions). There were more tasks, but decided that only this four are worthy of publishing as the most complex and, in my opinion, interesting. 
+This repository contains four projects that I have made for course of programming in Java during my studies at University of Wrocław. They are small window applications,  and each took me one week to develop (at most) and is centred around one major topic provided by the lecturer (in form of a task with strict guidelines, which sometimes resulted in overcomplicated interfaces or solutions). There were more tasks, but decided that only this four are worthy of publishing as the most interesting (at least in my opinion). 
 
 ## Technology
 ---
