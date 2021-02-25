@@ -1,0 +1,42 @@
+.root {
+    -fx-font-size: 18px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: gold;
+}
+
+#infoLabel {
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+
+#valueLabel {
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+
+#radixButton{
+    -fx-font-weight: bold;
+    -fx-background-color: powderblue;
+}
+
+#instructionButton{
+    -fx-background-color: wheat;
+}
+
+#operatorButton{
+    -fx-font-weight: bold;
+    -fx-font-color: black;
+    -fx-background-color: paleturquoise;
+}
+
+#executeButton{
+    -fx-background-color: turquoise;
+}
+
+#numberButton {
+    -fx-background-color: silver;
+}
+
+

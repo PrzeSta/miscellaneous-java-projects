@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator_app.Controller">
+   <children>
+      <Label id="valueLabel" fx:id="currentLabel" prefWidth="800.0" text="0" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+      <Label id="valueLabel" fx:id="previousLabel" prefWidth="800.0" text="0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+      <Label id="infoLabel" fx:id="currentOperationLabel" prefWidth="800.0" text="NONE" GridPane.columnIndex="4">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin></Label>
+      <Label id="infoLabel" fx:id="radixLabel" prefWidth="800.0" text="DEC" GridPane.columnIndex="5">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin></Label>
+      <Button id="radixButton" fx:id="buttonBin" mnemonicParsing="false" onAction="#handleButtonBinAction" prefWidth="800.0" text="BIN" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button id="radixButton" fx:id="buttonDec" mnemonicParsing="false" onAction="#handleButtonDecAction" prefWidth="800.0" text="DEC" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button id="radixButton" fx:id="buttonHex" mnemonicParsing="false" onAction="#handleButtonHexAction" prefWidth="800.0" text="HEX" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button id="instructionButton" fx:id="buttonDEL" mnemonicParsing="false" onAction="#handleButtonDELAction" prefWidth="800.0" text="DEL" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button id="instructionButton" fx:id="buttonAC" mnemonicParsing="false" onAction="#handleButtonACAction" prefWidth="800.0" text="AC" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button id="operatorButton" fx:id="buttonChSi" mnemonicParsing="false" onAction="#handleButtonChSiAction" prefWidth="800.0" text="Change sign" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Button id="numberButton" fx:id="button1" mnemonicParsing="false" onAction="#handleButton1Action" prefWidth="800.0" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button id="numberButton" fx:id="button2" mnemonicParsing="false" onAction="#handleButton2Action" prefWidth="800.0" text="2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button id="numberButton" fx:id="button3" mnemonicParsing="false" onAction="#handleButton3Action" prefWidth="800.0" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button id="numberButton" fx:id="button4" mnemonicParsing="false" onAction="#handleButton4Action" prefWidth="800.0" text="4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button id="numberButton" fx:id="button5" mnemonicParsing="false" onAction="#handleButton5Action" prefWidth="800.0" text="5" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button id="numberButton" fx:id="button6" mnemonicParsing="false" onAction="#handleButton6Action" prefWidth="800.0" text="6" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button id="numberButton" fx:id="button7" mnemonicParsing="false" onAction="#handleButton7Action" prefWidth="800.0" text="7" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Button id="numberButton" fx:id="button8" mnemonicParsing="false" onAction="#handleButton8Action" prefWidth="800.0" text="8" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Button id="numberButton" fx:id="button9" mnemonicParsing="false" onAction="#handleButton9Action" prefWidth="800.0" text="9" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Button id="numberButton" fx:id="button0" mnemonicParsing="false" onAction="#handleButton0Action" prefWidth="800.0" text="0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+      <Button id="numberButton" fx:id="buttonA" disable="true" mnemonicParsing="false" onAction="#handleButtonAAction" prefWidth="800.0" text="A" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button id="numberButton" fx:id="buttonB" disable="true" mnemonicParsing="false" onAction="#handleButtonBAction" prefWidth="800.0" text="B" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button id="numberButton" fx:id="buttonC" disable="true" mnemonicParsing="false" onAction="#handleButtonCAction" prefWidth="800.0" text="C" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button id="numberButton" fx:id="buttonD" disable="true" mnemonicParsing="false" onAction="#handleButtonDAction" prefWidth="800.0" text="D" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button id="numberButton" fx:id="buttonE" disable="true" mnemonicParsing="false" onAction="#handleButtonEAction" prefWidth="800.0" text="E" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Button id="numberButton" fx:id="buttonF" disable="true" mnemonicParsing="false" onAction="#handleButtonFAction" prefWidth="800.0" text="F" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+      <Button id="operatorButton" fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleButtonAddAction" prefWidth="800.0" text="+" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button id="operatorButton" fx:id="buttonSub" mnemonicParsing="false" onAction="#handleButtonSubAction" prefWidth="800.0" text="-" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button id="operatorButton" fx:id="buttonMul" mnemonicParsing="false" onAction="#handleButtonMulAction" prefWidth="800.0" text="*" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button id="operatorButton" fx:id="buttonDiv" mnemonicParsing="false" onAction="#handleButtonDivAction" prefWidth="800.0" text="/" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button id="operatorButton" fx:id="buttonMod" mnemonicParsing="false" onAction="#handleButtonModAction" prefWidth="800.0" text="\%" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button id="operatorButton" fx:id="buttonFac" mnemonicParsing="false" onAction="#handleButtonFacAction" prefWidth="800.0" text="!" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button id="operatorButton" fx:id="buttonPow" mnemonicParsing="false" onAction="#handleButtonPowAction" prefWidth="800.0" text="^" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button id="operatorButton" fx:id="buttonNewt" mnemonicParsing="false" onAction="#handleButtonNewtAction" prefWidth="800.0" text="Newt" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button id="instructionButton" fx:id="buttonReu" mnemonicParsing="false" onAction="#handleButtonReuAction" prefWidth="800.0" text="Reuse" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button id="executeButton" fx:id="buttonExe" mnemonicParsing="false" onAction="#handleButtonExeAction" prefWidth="800.0" text="=" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Label id="infoLabel" contentDisplay="CENTER" prefHeight="16.0" prefWidth="800.0" text="Input:" />
+      <Label id="infoLabel" contentDisplay="CENTER" prefHeight="16.0" prefWidth="800.0" text="Prev:" GridPane.rowIndex="1" />
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>
